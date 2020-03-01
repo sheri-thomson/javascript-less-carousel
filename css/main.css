@@ -1,4 +1,4 @@
-.carousel-item div {
+.carousel-item > div {
   display: none;
 }
 

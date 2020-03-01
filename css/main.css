@@ -2,9 +2,21 @@
   display: none;
 }
 
-#arsinoitherium-control:checked ~ carousel-inner #arsinoitherium,
-#elasmotherium-control:checked ~ carousel-inner #elasmotherium,
-#glyptodon-control:checked ~ carousel-inner #glyptodon,
-#megatherium-control:checked ~ carousel-inner #megatherium, {
+#arsinoitherium-control:checked ~ .carousel-inner #arsinoitherium,
+#elasmotherium-control:checked ~ .carousel-inner #elasmotherium,
+#glyptodon-control:checked ~ .carousel-inner #glyptodon,
+#megatherium-control:checked ~ .carousel-inner #megatherium, {
   display: block;
+}
+
+.carousel-btn {
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+#arsinoitherium-control:checked ~ .carousel-inner [for="arsinoitherium"],
+#elasmotherium-control:checked ~ .carousel-inner [for="elasmotherium"],
+#glyptodon-control:checked ~ .carousel-inner [for="glyptodon"],
+#megatherium-control:checked ~ .carousel-inner [for="megatherium"], {
+  background-color: #fff;
 }
